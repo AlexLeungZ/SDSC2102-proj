@@ -49,10 +49,11 @@ po/*~
 rsconnect/
 
 # VScode settings
-.vscode
+.vscode/
 settings.json
 
 # XPT dataset
+data/
 *.XPT
 
 # Test file
