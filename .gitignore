@@ -53,7 +53,6 @@ rsconnect/
 settings.json
 
 # XPT dataset
-data/
 *.XPT
 
 # Test file
