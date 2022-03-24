@@ -100,6 +100,17 @@ git https://github.com/AlexLeungZ/SDSC2102-project.git
 
 Open the repository with VScode
 
+#### You may also install the following extendsion in VScode
+
+```console
+ms-python.python
+ms-toolsai.jupyter
+Ikuyadeu.r
+donjayamanne.python-environment-manager
+```
+
+#### You may also add the following settings to your working directory
+
 1. Create folder called ```.vscode```
 2. Create file called ```settings.json```
 3. edit ```settings.json``` with the following
