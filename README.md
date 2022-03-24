@@ -49,18 +49,24 @@ Solving environment: failed with repodata from current_repodata.json, will retry
 Collecting package metadata (repodata.json): done
 ```
 
-Using the following command until success
+#### Fixing in Linux
 
 ```bash
 !!
 ```
 
-### Console log the path of R and Radian
+#### Fixing in Windows or mac
+
+Repeat the last command
+
+### Console log the path of R and Radian in Linux
 
 ```bash
 which r
 which radian
 ```
+
+### Console log the path of R and Radian in Windows or mac
 
 They are usually in the following path
 
@@ -69,13 +75,13 @@ R: ".../anaconda3/envs/r_env/bin/radian",
 Radian: ".../anaconda3/envs/r_env/lib/R/bin",
 ```
 
-## Assign Radian as the default R in linux
+### Assign Radian as the default R in Linux
 
 ```bash
 alias r="radian"
 ```
 
-### Setup the R kernel for Jupyter
+### Setup the R kernel for Jupyter for Linux Only
 
 ```bash
 radian
@@ -120,19 +126,11 @@ Open the repository with VScode
 1. ```ctrl``` + ```shift``` + ```p```
 2. Jupyter: Create New Blank Notebook
 3. Click on the button right below ellipsis in upper right corner to choose kernel
-4. Choose the one with R installed, e.g. ```/home/xxx/anaconda3/envs/r_env/lib/R/bin/R```
+4. Choose the one with R installed, e.g. ```R ~/anaconda3/envs/r_env/lib/R/bin/R Jupyter kernel``` or just ```R R Jupyter kernel```
 
 ### Try running a test code
 
-1. Create a new program cells
-
-    ```r
-    library(dplyr)
-    library(ggplot2)
-    library(haven)
-    ```
-
-2. Try to run the above code
+1. Run the code ```r-test-lib.ipynb```
 
 ## Credits
 
