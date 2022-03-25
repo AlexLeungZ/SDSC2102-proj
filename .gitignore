@@ -53,7 +53,7 @@ rsconnect/
 settings.json
 
 # XPT dataset
-*.XPT
+# *.XPT
 
 # Test file
-r-test.ipynb
+test.R
