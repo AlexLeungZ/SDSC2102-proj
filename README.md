@@ -2,13 +2,13 @@
 
 ## Title
 
-Will be updated later.
+Diabetes Factors Analysis​
 
-## Setting up running environment
+## Setting up running environment using conda
 
 ### Install Conda
 
-#### Windows/ Mac
+#### Windows / Mac
 
 [Anaconda installer for Windows](https://www.anaconda.com/products/individual "Anaconda installer for Windows")
 
@@ -22,7 +22,6 @@ bash Anaconda-latest-Linux-x86_64.sh
 ### Set up for conda-forge
 
 ```bash
-conda update --all
 conda config --add channels conda-forge
 ```
 
@@ -36,52 +35,23 @@ conda activate r_env
 ### Install package
 
 ```bash
-conda install -c conda-forge r-recommended r-essentials r-irkernel r-languageserver radian
+conda install -c conda-forge r-recommended r-irkernel r-languageserver radian
 conda install -c conda-forge Jupyter
 ```
 
-If installation fails as following:
-
-```console
-Collecting package metadata (current_repodata.json): done
-Solving environment: failed with initial frozen solve. Retrying with flexible solve.
-Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
-Collecting package metadata (repodata.json): done
-```
-
-#### Fixing in Linux
+### Install R package
 
 ```bash
-!!
+conda install -c conda-forge r-dplyr r-ggplot2 r-haven r-hrbrthemes r-reshape2
 ```
 
-#### Fixing in Windows or mac
-
-Repeat the last command
-
-### Console log the path of R and Radian in Linux
-
-```bash
-which r
-which radian
-```
-
-### Console log the path of R and Radian in Windows or mac
-
-They are usually in the following path
-
-```console
-R: ".../anaconda3/envs/r_env/bin/radian",
-Radian: ".../anaconda3/envs/r_env/lib/R/bin",
-```
-
-### Assign Radian as the default R in Linux
+### Assign Radian as the default R in Linux (optional)
 
 ```bash
 alias r="radian"
 ```
 
-### Setup the R kernel for Jupyter for Linux Only
+### Setup the R kernel for Jupyter in Linux
 
 ```bash
 radian
@@ -92,56 +62,21 @@ IRkernel::installspec()
 quit()
 ```
 
-### Set up for VScode
+### Download this repository
 
 ```bash
 git https://github.com/AlexLeungZ/SDSC2102-project.git
 ```
 
-Open the repository with VScode
+### Setup in VScode (Optional)
 
-#### You may also install the following extendsion in VScode
+[VS code](markdown/vscode.md)
 
-```console
-ms-python.python
-ms-toolsai.jupyter
-Ikuyadeu.r
-donjayamanne.python-environment-manager
-```
-
-#### You may also add the following settings to your working directory
-
-1. Create folder called ```.vscode```
-2. Create file called ```settings.json```
-3. edit ```settings.json``` with the following
-
-    ```json
-    {
-        "r.source.focus": "terminal",
-        "r.rterm.linux": "/home/xxx/anaconda3/envs/r_env/bin/radian",
-        "r.rpath.linux": "/home/xxx/anaconda3/envs/r_env/lib/R/bin",
-
-        "r.bracketedPaste": true,
-        "r.lsp.debug": true,
-        "r.lsp.diagnostics": false,
-        "r.rterm.option": ["--no-site-file"],
-        "r.sessionWatcher": true,
-        "r.source.encoding": ""
-    }
-    ```
-
-4. Change the setting for ```r.rterm.linux``` and ```r.rpath.linux``` to windows or mac if you are not using linux, also update the path to your R and Radian path.
-
-### Create New Blank Notebook
-
-1. ```ctrl``` + ```shift``` + ```p```
-2. Jupyter: Create New Blank Notebook
-3. Click on the button right below ellipsis in upper right corner to choose kernel
-4. Choose the one with R installed, e.g. ```R ~/anaconda3/envs/r_env/lib/R/bin/R Jupyter kernel``` or just ```R R Jupyter kernel```
+### Choosing R as Jupyter kernel
 
 ### Try running a test code
 
-1. Run the code ```r-test-lib.ipynb```
+1. Run the code ```r_test.ipynb```
 
 ## Credits
 
