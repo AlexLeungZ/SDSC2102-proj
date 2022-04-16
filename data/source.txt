@@ -1,3 +1,25 @@
+Source:
 https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&Cycle=2017-2020
 https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&Cycle=2017-2020
 https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2017-2020
+
+National Health and Nutrition Examination Survey
+2017-March 2020 Data Documentation, Codebook, and Frequencies
+Alcohol Use (P_ALQ)
+https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/P_ALQ.htm
+
+National Health and Nutrition Examination Survey
+2017-March 2020 Data Documentation, Codebook, and Frequencies
+Body Measures (P_BMX)
+https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/P_BMX.htm
+
+National Health and Nutrition Examination Survey
+2017-March 2020 Data Documentation, Codebook, and Frequencies
+Blood Pressure & Cholesterol (P_BPQ)
+https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/P_BPQ.htm
+
+National Health and Nutrition Examination Survey
+2017-March 2020 Data Documentation, Codebook, and Frequencies
+Diabetes (P_DIQ)
+https://wwwn.cdc.gov/Nchs/Nhanes/2017-2018/P_DIQ.htm
+
