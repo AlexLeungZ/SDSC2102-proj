@@ -42,7 +42,9 @@ conda install -c conda-forge Jupyter
 ### Install R package
 
 ```bash
-conda install -c conda-forge r-dplyr r-ggplot2 r-haven r-hrbrthemes r-reshape2
+conda install -c r r-rpart
+conda install -c conda-forge r-dplyr r-ggplot2 r-haven 
+conda install -c conda-forge r-rpart.plot r-hrbrthemes r-reshape2
 ```
 
 ### Assign Radian as the default R in Linux (optional)
