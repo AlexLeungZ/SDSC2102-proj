@@ -4,7 +4,7 @@
 
 Diabetes Factors Analysis​
 
-## Setting up running environment using conda
+## Setting up running environment (with conda)
 
 ### Install Conda
 
@@ -35,7 +35,8 @@ conda activate r_env
 ### Install package
 
 ```bash
-conda install -c conda-forge r-recommended r-irkernel r-languageserver radian
+conda install -c conda-forge r-recommended r-irkernel r-languageserver
+conda install -c conda-forge r-recommended radian # optional
 conda install -c conda-forge Jupyter
 ```
 
@@ -47,16 +48,57 @@ conda install -c conda-forge r-dplyr r-ggplot2 r-haven
 conda install -c conda-forge r-rpart.plot r-hrbrthemes r-reshape2
 ```
 
-### Assign Radian as the default R in Linux (optional)
+## Assign Radian as the default R in Linux (optional)
 
 ```bash
 alias r="radian"
 ```
 
+## Setting up running environment (without conda)
+
+### Install R
+
+[Download and Install R](https://cloud.r-project.org/ "Download and Install R")
+
+### Install Python
+
+[Download and Install Python](https://www.python.org/downloads/ "Download and Install Python")
+
+### Install Radian (optional)
+
+```bash
+pip3 install -U radian
+```
+
+## Assign Radian as the default R in Linux (optional)
+
+```bash
+alias r="radian"
+```
+
+### Install R package
+
+```bash
+radian # r if you did not install radian
+```
+
+```R
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("haven")
+install.packages("hrbrthemes")
+install.packages("reshape2")
+install.packages("rpart")
+install.packages("rpart.plot")
+quit()
+```
+
+## Setup the R kernel
+
 ### Setup the R kernel for Jupyter in Linux
 
 ```bash
-radian
+radian # r if you did not install radian
 ```
 
 ```R
