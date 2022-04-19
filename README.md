@@ -1,8 +1,4 @@
-# Proj Title
-
-## Title
-
-Diabetes Factors Analysis​
+# Diabetes Factors Analysis
 
 ## Setting up running environment (with conda)
 
